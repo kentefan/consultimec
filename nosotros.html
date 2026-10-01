@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nosotros | CONSULTIMEC</title>
+  <meta name="description" content="CONSULTIMEC ofrece soluciones integrales de ingeniería para la industria.">
+  <link rel="icon" href="assets/site/cropped-ISO_Mesa-de-trabajo-1-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="índice.html" aria-label="CONSULTIMEC inicio">
+      <img src="assets/site/LOGO-CONSULTIMEC.svg" alt="CONSULTIMEC">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="main-menu" class="main-menu" aria-label="Menú principal">
+      <a href="índice.html">Inicio</a>
+      <a class="active" href="nosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="clientes.html">Clientes</a>
+      <a href="contacto.html">Contáctenos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="CONSULTIMEC">
+      <img src="assets/site/BANNER-1-CONSULTIMEC_Mesa-de-trabajo-1-min.png" alt="Servicios de ingeniería y construcciones metalmecánicas">
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <span class="eyebrow">CONSULTIMEC CIA. LTDA.</span>
+        <h1>Ingeniería para la industria</h1>
+        <p>CONSULTIMEC ofrece soluciones integrales de ingeniería mecánica, eléctrica y civil para proyectos industriales.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card featured-service">
+          <img src="assets/site/INGENIERIAS_Mesa-de-trabajo-1_Mesa-de-trabajo-1-min.png" alt="Ingeniería y diseño">
+          <div>
+            <span>01</span>
+            <h2>Trabajo integrado</h2>
+            <p>La empresa integra ingeniería, fabricación, montaje y mantenimiento para el desarrollo de proyectos industriales.</p>
+            <ul>
+              <li>Ingeniería mecánica, eléctrica y civil</li>
+              <li>Fabricación de estructuras y equipos</li>
+              <li>Montaje de sistemas industriales</li>
+              <li>Mantenimiento para continuidad operativa</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img src="assets/projects/proyecto-escalera-inclinada-para-acceso-de-limpieza-songa/08.jpg" alt="Estructura metálica industrial">
+          <span>02</span>
+          <h2>Fabricación y montaje</h2>
+          <p>Desarrollo de plataformas, pasarelas, escaleras, estructuras y sistemas de proceso.</p>
+        </article>
+
+        <article class="service-card">
+          <img src="assets/projects/proyecto-tanque-santa-elena/11.jpg" alt="Tuberías industriales">
+          <span>03</span>
+          <h2>Capacidad técnica</h2>
+          <p>Diseño, fabricación e instalación de sistemas de tuberías, equipos y componentes industriales.</p>
+        </article>
+
+        <article class="service-card">
+          <img src="assets/projects/proyecto-proteccion-de-pantallas-songa/05.jpg" alt="Mantenimiento industrial">
+          <span>04</span>
+          <h2>Proyectos documentados</h2>
+          <p>La sección de proyectos presenta una galería fotográfica de trabajos realizados por CONSULTIMEC.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="value-band">
+      <div class="value-copy">
+        <span class="eyebrow">Enfoque de trabajo</span>
+        <h2>Seguridad, certificación y capacidad técnica</h2>
+        <ul>
+          <li>Personal calificado para trabajos de alto riesgo</li>
+          <li>Acreditados por SGS</li>
+          <li>Trabajos con seguridad en todo momento</li>
+        </ul>
+      </div>
+
+      <img src="assets/site/VALOR-AGREGADO_Mesa-de-trabajo-1-min.png" alt="Valor agregado CONSULTIMEC">
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Diseñado para CONSULTIMEC CIA. LTDA.</p>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/" aria-label="Contactar por WhatsApp">WA</a>
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mainMenu = document.querySelector(".main-menu");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainMenu.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+  </script>
+</body>
+</html>
