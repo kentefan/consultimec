@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | CONSULTIMEC</title>
+  <meta name="description" content="Contacta a CONSULTIMEC para proyectos de ingeniería y construcción metalmecánica.">
+  <link rel="icon" href="assets/site/cropped-ISO_Mesa-de-trabajo-1-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="índice.html" aria-label="CONSULTIMEC inicio">
+      <img src="assets/site/LOGO-CONSULTIMEC.svg" alt="CONSULTIMEC">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="main-menu" class="main-menu" aria-label="Menú principal">
+      <a href="índice.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="clientes.html">Clientes</a>
+      <a class="active" href="contacto.html">Contáctenos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Contacto CONSULTIMEC">
+      <img src="assets/site/BANNER-1-CONSULTIMEC_Mesa-de-trabajo-1-min.png" alt="CONSULTIMEC">
+    </section>
+
+    <section class="section contact-section">
+      <div class="contact-copy">
+        <span class="eyebrow">Contacto</span>
+        <h1>Cómo llegar a CONSULTIMEC</h1>
+        <p>Soluciones integrales de ingeniería mecánica, eléctrica y civil para la industria.</p>
+
+        <a class="contact-link" href="mailto:consultimec@gmail.com">
+          consultimec@gmail.com
+        </a>
+
+        <a class="contact-link" href="https://www.consultimec.com/" target="_blank" rel="noopener noreferrer">
+          www.consultimec.com
+        </a>
+
+        <a class="contact-link" href="https://www.instagram.com/consultimec_es/" target="_blank" rel="noopener noreferrer">
+          Instagram: @consultimec_es
+        </a>
+
+        <a class="contact-link" href="https://www.tiktok.com/@.consultimec.cia" target="_blank" rel="noopener noreferrer">
+          TikTok: @.consultimec.cia
+        </a>
+      </div>
+
+      <iframe
+        title="Ubicación de Consultimec"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.054519571771!2d-79.60338318547431!3d-2.1327478377361855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d47a11564642d%3A0xa283aa83a86d9e23!2sConsultimec%20Cia.%20Ltda.!5e0!3m2!1ses-419!2sec!4v1624473456825!5m2!1ses-419!2sec"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Diseñado para CONSULTIMEC CIA. LTDA.</p>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/" aria-label="Contactar por WhatsApp">WA</a>
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mainMenu = document.querySelector(".main-menu");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainMenu.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+  </script>
+</body>
+</html>
