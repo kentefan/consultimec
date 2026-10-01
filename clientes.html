@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clientes | CONSULTIMEC</title>
+  <meta name="description" content="Clientes publicados de CONSULTIMEC.">
+  <link rel="icon" href="assets/site/cropped-ISO_Mesa-de-trabajo-1-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="índice.html" aria-label="CONSULTIMEC inicio">
+      <img src="assets/site/LOGO-CONSULTIMEC.svg" alt="CONSULTIMEC">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="main-menu" class="main-menu" aria-label="Menú principal">
+      <a href="índice.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a class="active" href="clientes.html">Clientes</a>
+      <a href="contacto.html">Contáctenos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Clientes de CONSULTIMEC">
+      <img src="assets/site/BANNER-1-CONSULTIMEC_Mesa-de-trabajo-1-min.png" alt="CONSULTIMEC">
+    </section>
+
+    <section class="section clients-section">
+      <div class="section-heading">
+        <span class="eyebrow">Experiencia industrial</span>
+        <h1>Nuestros clientes</h1>
+        <p>Empresas incluidas en el sitio publicado de CONSULTIMEC.</p>
+      </div>
+
+      <div class="client-logos">
+        <img src="assets/site/LOGO-CN_Mesa-de-trabajo-1.png" alt="Cervecería Nacional">
+        <img src="assets/site/NIRSA_Mesa-de-trabajo-1.png" alt="NIRSA">
+        <img src="assets/site/SM_Mesa-de-trabajo-1.png" alt="SMI">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Diseñado para CONSULTIMEC CIA. LTDA.</p>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/" aria-label="Contactar por WhatsApp">WA</a>
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mainMenu = document.querySelector(".main-menu");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainMenu.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+  </script>
+</body>
+</html>
